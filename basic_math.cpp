@@ -8,5 +8,6 @@ int main(){
     std::cout<<floor(4.7)<<'\n'; // rounds down to 4
     std::cout<<fmax(10,20)<<'\n'; // returns the max between two
     std::cout<<fmin(20,11)<<'\n'; // returns the min between two 
+    std::cout<<abs(-102)<<'\n'; // converts negative value to positive.
     return 0;
 }
