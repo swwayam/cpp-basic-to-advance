@@ -17,9 +17,6 @@ int main()
     // Size method
     std::cout << size(name) << '\n';
 
-    // substr method
-    std::cout<<name.substr(2,5)<<'\n';
-
     // resize method ->  If num > size() then, the rest of characters are initialized by the ‘\0’.
     name.resize(20);
     std::cout << name << '\n';
@@ -55,32 +52,12 @@ int main()
     // str.begin() -> needs string::iterator to store the iteration
     std::string::iterator it;
     it = name.begin();
-    std::cout<<*it<<'\n';
+    std::cout<<++*it<<'\n';
 
-    // str.end() -> needs string::iterator to store the iteration
+    // str.end()
     std::string::iterator it1;
-    it1 = name.end() - 1; // the last occurance is empty -1 to get the last character 
-    std::cout<<*it1<<'\n';
-
-    // rfind() -> finding from last occurances
-    std::cout<<name.rfind('a')<<'\n';
-
-    // rebegin() -> returns the last character starts the iterator from the last 
-    // rend() -> returns the first character
-    std::cout<<*name.rbegin()<<'\n';
-  
-
-    // String capactiy functions - length , capacity , resize , shrink_to_fit
-
-    // capacity -> returns the capacity assigned by the compiler
-    std::cout<<name.capacity()<<'\n';
-
-    // shrink_to_fit -> decreases the capacity of the string and makes it equal to the minimum
-    name.shrink_to_fit();
-    std::cout<<name.capacity()<<'\n';
-
-    std::cout<<name<<'\n';
-    std::cout<<name1<<'\n';
+    it1 = name.end();
+    std::cout<<it1<<'\n';
 
     return 0;
 }
