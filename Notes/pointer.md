@@ -4,7 +4,7 @@
 
 -----
 
-## It allows us to change the memory location that the pointer is pointing to. But cannot change the value of the varible its pointing to.
+### It allows us to change the memory location that the pointer is pointing to. But cannot change the value of the varible its pointing to.
 
 **Syntax**
 
@@ -16,4 +16,4 @@
 
 > int number2 = 40;
 
-> *ptr = &number2;
+![Pointer to const](image.png)
