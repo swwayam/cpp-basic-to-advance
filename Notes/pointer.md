@@ -9,9 +9,11 @@
 **Syntax**
 
 > int number = 20;
+
 > const int* ptr = &number; 
 
 > *ptr = 443; // compile error 
 
 > int number2 = 40;
+
 > *ptr = &number2;
